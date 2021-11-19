@@ -2,7 +2,7 @@
 
 pragma solidity >=0.8.0 <0.9.0;
 
-contract JointAccounts { // Very simple smart contract that allows users to create a "Joint Account" with another user. Both users can deposit/withdrawal from the same account.
+contract JointAccounts { // Very simple smart contract that allows users to create a "Joint Account" with another user.
 
     uint public total_accounts; // Keeps track of the amount of joint accounts created.
     
