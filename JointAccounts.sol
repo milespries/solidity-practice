@@ -8,7 +8,7 @@ contract JointAccounts { // Very simple smart contract that allows users to crea
     
     mapping(address => uint) private user_to_account; // Returns the "joint account ID" from a users address.
     
-    mapping(uint => uint) private account_to_balance; // Returns the balance in WEI from an "joint account ID".
+    mapping(uint => uint) private account_to_balance; // Returns the balance in WEI from a "joint account ID".
     
     // Uses the 'user_to_account' mapping to make a modifier that checks if the function caller has been assigned to a joint account yet.
     modifier hasAccount { 
