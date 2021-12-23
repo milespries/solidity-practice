@@ -38,7 +38,7 @@ contract COINFLIPS is VRFConsumerBase{
     event FlipCreated(uint indexed flipId, uint indexed bet_amount);
     event FlipCompleted(uint indexed flipId, address indexed winner);
 
-    constructor()
+    constructor() // Meant for Rinkeby Testnet
         VRFConsumerBase(0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B, 0x01BE23585060835E02B77ef475b0Cc51aA1e0709)
     {
         s_keyHash = 0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311;
